@@ -1,0 +1,7 @@
+com/app/profiles/MultiProfilesApplication.class
+com/app/profiles/model/Item.class
+com/app/profiles/repository/AppRepository.class
+com/app/profiles/service/AppService.class
+com/app/profiles/controller/ApplicationController.class
+com/app/profiles/service/impl/AppServiceImpl.class
+com/app/profiles/repository/impl/AppRepositoryImpl.class
