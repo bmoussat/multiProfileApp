@@ -1,5 +1,5 @@
-# Running spring boot app with localstack
-This project is a spring boot web application that let you upload files and store them in a localstack s3 bucket.
+# Running spring boot app with multiple profiles
+This project is a spring boot web application that contains multiple profile and let us chose the wanted configuration using ```spring.profiles.active ```property 
 
 ## Prerequisites
 
@@ -7,6 +7,7 @@ This project is a spring boot web application that let you upload files and stor
 - mysql
 - hibernate
 - Lombok
+- thymeleaf
 
 ## Usage
 
