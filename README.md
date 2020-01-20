@@ -19,7 +19,16 @@ Import  dumpDev.sql files in bdd
  
 ` mysql -u your_bdd_user -p dev < dumpProd.sql`
  
-
+Set the right database user and password in application-dev.properties
+```
+spring.datasource.username=your_db_user
+spring.datasource.password=your_db_password
+```
+Set the right database user and password in application-prod.properties
+```
+spring.datasource.username=your_db_user
+spring.datasource.password=your_db_password
+```
 Set the wanted profile in the application.properties file (dev or prod)
 
 `spring.profiles.active=prod` for production configuration or
