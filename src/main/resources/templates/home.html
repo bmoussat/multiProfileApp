@@ -1,27 +1,35 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Multi application demo</title>
+<title>Multi profile application demo</title>
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
 
 </head>
 <body>
 	<div class="container container-table p-3">
-	
+
 		<div style="width: 80%; padding-top: 10px; padding-bottom: 100px;">
-		<h1>Multi application demo</h1>
-			<table>
-				<th:block th:each="item : ${items}">
+			<h1>Multi profile application demo</h1>
+			<table class="table table-hover table-bordered table-hover"
+				style="font-size: 22px;">
+				<thead class="panel panel-primary">
 					<tr>
-						<h1>
-						<td th:text="${item.id}">...</td>
-						</h1>
-						<h1>
-						<td th:text="${item.value}">...</td>
-						</h1>
+						<th scope="col">Item id</th>
+						<th scope="col">Item Value</th>
 					</tr>
-				</th:block>
+				</thead>
+				<tbody>
+					<tr th:each="item : ${items}">
+
+						<td th:text="${item.id}">...</td>
+						<td th:text="${item.value}">...</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>

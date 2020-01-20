@@ -22,11 +22,11 @@ public class AppRepositoryImpl implements AppRepository {
 
 	@Override
 	public List<Item> getItems() {
-		String query = "SELECT r4i FROM R4Item r4i";
-		Query r4ItemQuery = entityManager.createQuery(query);
+		String query = "SELECT i FROM Item i";
+		Query itemQuery = entityManager.createQuery(query);
 
 		@SuppressWarnings("unchecked")
-		List<Item> items = (List<Item>) r4ItemQuery.getResultList();
+		List<Item> items = (List<Item>) itemQuery.getResultList();
 
 		return items;
 	}
